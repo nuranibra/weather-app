@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./reset.css" rel="stylesheet"/>
+    <link href="./style.css" rel="stylesheet"/>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>nuran<strong>ibra</strong></h1>
+        <div>
+            <input type="text" id="searchButton" placeholder="Enter Search Country"/>
+            <ion-icon name="search-outline" class="iconSearch" style="font-size: 20px;"></ion-icon>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="main-div" id="mainDiv">
+                <div class="header-div">
+                    <h2 id="countryText"></h2>
+                    <ion-icon class="location-icon" name="location-outline"></ion-icon>
+                </div>
+                <div class="divChild">
+                    <img src="./img/clearSky.png" id="weatherImg" class="weather-img"/>
+                    <div class="about-weather-div">
+                        <h3 id="weatherDerece">&deg;</h3>
+                        <h2 id="weatherAbout"></h2>
+                    </div>
+                </div>
+                <div class="more-about-weather">
+                    <div>
+                        <div>
+                            <img class="about-img" src="./img/humidity.png" />
+                        </div>
+                        <div>
+                            <h4 id="humidity"></h4>
+                            <h4>Humidity</h4>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <img class="about-img" src="./img/wind.png" />
+                        </div>
+                        <div>
+                            <h4 id="wind"></h4>
+                            <h4>Wind</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="notFound" id="notFound">
+                <h2>Not Found</h2>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,223 @@
+*{
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    padding:2%;
+    border-bottom:1px solid #000;
+    align-items: center;
+}
+
+header > div {
+    display: flex;
+    align-items: center;
+}
+
+header > div > input {
+    /* border-right: none;
+    border-top:1px solid #000;
+    border-left:1px solid #000;
+    border-bottom:1px solid #000;
+    border-top:1px solid #000; */
+    border:1px solid #000;
+    padding:2%;
+}
+
+.iconSearch{
+    margin-left:-12%;
+    background-color: #fff;
+}
+
+@keyframes animationText {
+    from{
+        transform: translateY(-100px);
+    }
+
+    to{
+        transform: translateY(0px);
+    }
+}
+
+header > h1{
+    animation-name:animationText;
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+    animation-timing-function: ease;
+    font-size:25px;
+    font-family: Arial;
+}
+
+
+
+header > h1 > strong{
+    font-weight: 600;
+    color:#e62f2f;
+}
+
+main{
+    background-color: #1b2872;
+    height: 87.4vh;
+}
+
+main > section{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+@keyframes boxShadow {
+    from{
+        transform: rotate(-360deg);
+        width: 0%;
+        height: 0%;
+    }
+    to{
+        transform: rotate(0deg);
+        width: 25%;
+        height: 80%;
+    }
+}
+
+main > section > div{
+    display: none;
+    animation-name: boxShadow;
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+    animation-timing-function: ease;
+    width: 25%;
+    height: 80%;
+    padding:1%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.header-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-div > h2{
+    font-size: 24px;
+    font-weight: 800;
+    font-family: Inter;
+}
+
+.location-icon{
+    font-size:24px;
+}
+
+.divChild{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    margin-top:30px;
+}
+
+.weather-img{
+    width: 170px;
+    height: 170px;
+}
+
+.about-weather-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:10px;
+}
+
+.about-weather-div > h3{
+    font-size: 24px;
+    font-weight: 600;
+    font-family: Inter;
+}
+
+.about-weather-div > h2{
+    margin-top:5px;
+    font-size:25px;
+    font-weight: 600;
+    font-family: Inter;
+}
+
+.more-about-weather{
+    display: flex;
+    height: 30%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about-img{
+    width: 30px;
+    height: 30px;
+}
+
+.more-about-weather > div > div > h4{
+    font-size: 16px;
+    font-family: Inter;
+}
+
+@keyframes notFound {
+    from{
+        width: 0%;
+        height: 20%;
+    }
+
+    to{
+        width: 80%;
+        height: 20%;
+    }
+}
+
+.notFound{
+    animation-name: notFound;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-delay: 0s;
+    animation-timing-function: ease;
+    height: 20%;
+    width: 80%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notFound > h2{
+    font-size: 30px;
+    font-family: Inter;
+}
+
+@media all and (min-width:200px) and (max-width:415px) {
+
+    @keyframes miniPhone {
+        from{
+            transform: translateY(-100px);
+        }
+
+        to{
+            transform: translateY(0);
+        }
+    }
+
+    .main-div{
+        animation-name: miniPhone;
+        animation-duration: 0.5s;
+        animation-delay: 0s;
+        animation-timing-function: ease;
+        width: 90%;
+        height: 80%;
+        padding-top:30px;
+    }
+
+    main{
+        height: 93.8vh;
+    }
+}
